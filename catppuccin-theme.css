@@ -1,0 +1,100 @@
+:root {
+    --background: #1e1e2e;
+    --text: #cdd6f4;
+    --subtext: #a6adc8;
+    --surface: #313244;
+    --overlay: #6c7086;
+    --accent: #f5c2e7;
+    --link: #89b4fa;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+#app {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.sidebar {
+    background-color: var(--surface);
+    border-right: 1px solid var(--overlay);
+}
+
+.sidebar-nav li {
+    margin: 6px 0;
+}
+
+.sidebar ul li a {
+    color: var(--subtext);
+    font-weight: 400;
+}
+
+.sidebar ul li.active > a {
+    color: var(--accent);
+    border-right: 2px solid var(--accent);
+}
+
+.content {
+    padding-top: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+a {
+    color: var(--link);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+code {
+    background-color: var(--surface);
+    color: var(--text);
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+pre {
+    background-color: var(--surface);
+    border-radius: 8px;
+    padding: 16px;
+}
+
+blockquote {
+    border-left: 4px solid var(--accent);
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: var(--surface);
+}
+
+.markdown-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Customizing scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--surface);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--overlay);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);
+}
